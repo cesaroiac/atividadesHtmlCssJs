@@ -1,0 +1,31 @@
+/**{
+     background-color:#3399ff;
+}*/
+header{
+    background-color: #0066ff;
+    font-size: 60px; 
+    color: white;
+}
+main{
+    background-color:#3399ff;
+    font-size: 15px;
+}
+legend{
+    font-size: 20px;
+}
+#p, #u{
+    display: inline-block;
+}
+#cadastrar{
+    background-color:#003399;
+    color: white;
+    display: inline-block;
+}
+#cancelar{
+    color: whuite;
+    background-color:#3399ff;
+}
+a{
+    display: inline-block;
+}
+

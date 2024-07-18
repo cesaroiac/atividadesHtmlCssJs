@@ -1,0 +1,90 @@
+*{
+    font-size: 16px;
+    font-family: monospace;
+    padding: 0;
+    border-width: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #000051;
+    text-align: center;
+    padding: 1em;
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+figure img{
+    width: 6em;
+    height: auto;
+    border-radius: 50%;
+}
+main{
+    text-align: center;
+    background-color:#002984;
+    color: #fff;
+    padding: 2em;
+    overflow: auto;
+}
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.6em;
+}
+section{
+    background-color: #000051;
+    margin: 1em;
+    margin-bottom: 50em; 
+    padding: 1em;
+    text-align: left;
+    width: 50%;
+    overflow: auto;
+}
+section:nth-child(odd){
+    float: right;
+}
+main figure{
+    position: relative;
+    width: 28%;
+    margin: auto;
+}
+main figure img{
+    border-radius: 1em;
+    width: 100%;
+}
+main figure figcaption{
+    font-size: 4em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+   /* background-color: #001064;*/
+   background-color: rgba(0,0,0,.6);
+}
+nav ul li img{
+    width:2em;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.praCima{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #000051; 
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1.6em;
+}
+
+
+
+

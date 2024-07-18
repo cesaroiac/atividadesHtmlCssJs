@@ -1,0 +1,169 @@
+@font-face{
+    font-family: dakota;
+    src: url("../font/dakota.otf");
+}
+:root{
+    --primary-color: #546e7a;
+    --primary-light-color: #819ca9;
+    --primary-dark-color: #29434e;
+    --primary-text-color: #fff;
+
+    --secondary-color: #ffd54f;
+    --secondary-light-color: #ffff81;
+    --secondary-dark-color: #c8a415;
+    --secondary-text-color: #000;
+}
+*{
+    font-family: dakota;
+    font-size: 24px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    color: var(--primary-text-color);
+    box-sizing: border-box;
+}
+.material-icons{ /* Reinicia configuração da classe de ícones */
+    font-size: 1em;
+    padding: 0 2px;
+    border: 0;
+    margin: 0;
+}
+html, body{
+    height: 100%; /* Permite medir a altura dos outros elementos em porcentagem */
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/dragonYellow.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-dark-color);
+}
+nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+nav li{
+    width: 100%;
+    text-align: center;
+}
+nav li:first-child{ /* Menu colapsado */
+    display: none;
+}
+nav a{
+    text-transform: uppercase;
+    display: block;
+    padding: 1em;
+}
+nav a:hover{
+    background-color: var(--primary-color);
+}
+main{
+    background-color: var(--primary-light-color);
+    padding: 1em;
+    text-align: center;
+}
+footer{
+    background-color: var(--primary-dark-color);
+    padding: 1em;
+    text-align: center;
+}
+footer > div{
+    display: flex;
+    margin: 4em
+}
+footer ul{
+    width: 100%;
+    list-style: none;
+}
+footer li::before{
+    content: "<";
+}
+footer li::after{
+    content: ">";
+}
+footer > a{
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    background-color: var(--primary-dark-color);
+    padding: 1em;
+    border-radius: 50%;
+}
+footer > a:hover, footer > a:hover > span{ /* Botão de "topo"*/
+    text-decoration: none;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+a, a span{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+a span{
+    display: inline-block;
+}
+a:hover, a:hover span{
+    text-decoration: underline;
+}
+h1{
+    font-size: 4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Desconta o posicionamento de "top" e "left"*/
+}
+h2{
+    font-size: 2.5em;
+}
+article{
+    display: inline-block;
+    width: 40%;
+    margin: 1em;
+    border-radius: 1em;
+    padding: 2em 1em;
+    background-color: var(--primary-dark-color);
+    vertical-align: top;
+    text-align: justify;
+}
+article p{
+    padding-top: 2em;
+}
+article p::first-letter{
+    font-size: 2em;
+    color: var(--secondary-light-color);
+}
+article figure{
+    width: 100%;
+    position: relative;
+}
+figure img{
+    width: 100%;
+    border-radius: 1em;
+}
+figure figcaption{
+    position: absolute;
+    bottom: .1em;
+    width: 100%;
+    font-size: 2em;
+    padding: 0.6em;
+    background-color: rgba(0, 0, 0, .6);
+    text-align: center;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em
+}
+@media screen and (max-width: 600px){
+    main{
+        background-color: #F00;
+    }
+    article{
+        display: block;
+        width: 100%;
+    }
+}
